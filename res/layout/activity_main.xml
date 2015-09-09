@@ -1,0 +1,95 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ScrollView"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:onClick="sendNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send On Going Notification"
+        android:onClick="sendOnGoingNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send BigPictureStyle Notification"
+        android:onClick="sendBigPictureStyleNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send BigTextStyle Notification"
+        android:onClick="sendBigTextStyleNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Button Notification"
+        android:onClick="sendButtonNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send InboxStyle Notification (1/2)"
+        android:onClick="sendInboxStyleNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send InboxStyle Notification (2/2)"
+        android:onClick="sendInboxStyleNotification2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Toast (1/2)"
+        android:onClick="sendToast"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Toast (2/2)"
+        android:onClick="sendToast2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Heads-up Notification"
+        android:onClick="showHeadsupNotification"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Heads-up Notification w/o icon"
+        android:onClick="showHeadsupNotification1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Heads-up Notification w/o title"
+        android:onClick="showHeadsupNotification2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Heads-up Notification w/o message"
+        android:onClick="showHeadsupNotification3"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Heads-up Notification (japanese)"
+        android:onClick="showHeadsupNotification4"
+        />
+</LinearLayout>
+</ScrollView>
