@@ -219,7 +219,7 @@ public class MainActivity extends FragmentActivity {
 		NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
 		builder.setSmallIcon(android.R.drawable.star_big_on);	// アイコンの設定
-		builder.setTicker("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");		// ステータスバー上のテキストの設定
+		builder.setTicker("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");	// ステータスバー上のテキストの設定
 		builder.setContentTitle("WWWWWWWWWWWWWWWWWWWWWWWWW");
 		builder.setContentText("WWWWWWWWWWWWWWWWWWWWWWWWWW");
 		builder.setContentInfo("WWWWWWWWWWWWWWWWWWWWWWWWWW");
@@ -272,9 +272,8 @@ public class MainActivity extends FragmentActivity {
 	        toast.show();
 	}
 
-	//http://bearmini.hatenablog.com/entry/2014/07/11/171901
 	public void showHeadsupNotification(View v) {
-            Log.i(TAG, "Heads-up Notification");
+            Log.i(TAG, Here.at() + "Heads-up Notification");
 	    if (Build.VERSION.SDK_INT < 20) {
 	        Log.i(TAG, "Heads-up Notification is not supported.");
 	        return;
@@ -297,7 +296,6 @@ public class MainActivity extends FragmentActivity {
 	        Log.e(TAG, e.getMessage(), e);
 	    }
 
-	// Intentの生成(Googleのサイトを開くIntentの生成）
 	Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://google.co.jp/"));
 	PendingIntent contentIntent = PendingIntent.getActivity(
 			this, REQUEST_SAMPLE, intent, PendingIntent.FLAG_UPDATE_CURRENT);
